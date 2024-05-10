@@ -25,10 +25,9 @@ docker-compose -d --build
   localhost:8080 -> Aplicação
   localhost:8888 -> phpMyAdmin [user: root, password: root]
 ```
-
-# Para melhores informações entrar em contato via whatsapp: (48) 9 9940-2516 
-
 # AUTOR
   ## Érick Dias - derickbass4@gmail.com
+  ## Para melhores informações entrar em contato via whatsapp: (48) 9 9940-2516 
+  
   
   
