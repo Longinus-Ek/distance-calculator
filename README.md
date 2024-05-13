@@ -29,6 +29,11 @@ php artisan key:generate
 php artisan migrate
 
 ```
+#Arquivos Piloto:
+```
+Foi adicionado um arquivo no corpo do projeto laravel chamado exemplo.csv, nele contém uma estrutura conforme passado no teste para importação em massa de ceps, desenvolvi seguindo aquele exemplo
+```
+
 # Acessos:
 ```
   localhost:8080 -> Aplicação
