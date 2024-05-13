@@ -23,8 +23,8 @@ composer install
 Em um terminal dentro da pasta raiz do VMI Docker [Docker], execute:
 docker-compose -d --build
 
-Após subir os containers execute:
-php artisan cache:clear
+Após subir os containers execute, obs: Dentro do terminal do Docker:
+php artisan optimize:clear
 php artisan key:generate
 php artisan migrate
 
