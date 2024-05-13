@@ -156,13 +156,17 @@ class DistanceController extends Controller
             $distance = new DistanceCalculator('2eae6f2e74591d2a5ca6f1143aafac08');
             foreach($dados as $key => $dado){
                 $distances = Distance::all();
+                $continuar = false;
                 foreach($distances as $distanceModel){
                     if($distanceModel->cepIn == $dado[0] && $distanceModel->cepFn == $dado[1]){
-                        continue;
+                        $continuar = true;
                     }
                     if($distanceModel->cepIn == $dado[1] && $distanceModel->cepFn == $dado[0]){
-                        continue;
+                        $continuar = true;
                     }
+                }
+                if($continuar){
+                    continue;
                 }
                 $model = new Distance();
                 $consultaCep1 = $distance->getCep($dado[0]);
