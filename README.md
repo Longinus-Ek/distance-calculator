@@ -28,6 +28,11 @@ docker-compose -d --build
 # AUTOR
   ## Érick Dias - derickbass4@gmail.com
   ## Para melhores informações entrar em contato via whatsapp: (48) 9 9940-2516 
-  
+
+# ERROS
+
+```
+  Caso aconteça algum erro se session, basta rodar o comando php artisan optimize:clear no terminal do container setup-php
+```
   
   
