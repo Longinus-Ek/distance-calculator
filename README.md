@@ -18,7 +18,16 @@
 ```
 Para utilização basta clonar o reposítório e executar o comando:
 
+Em um terminal dentro da pasta raiz do projeto laravel [distance], execute:
+composer install
+Em um terminal dentro da pasta raiz do VMI Docker [Docker], execute:
 docker-compose -d --build
+
+Após subir os containers execute:
+php artisan cache:clear
+php artisan key:generate
+php artisan migrate
+
 ```
 # Acessos:
 ```
