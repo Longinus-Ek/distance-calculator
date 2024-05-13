@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('distance');
 });
+
+Route::post('/distance/import', [\App\Http\Controllers\DistanceController::class, 'importCSV'])->name('distance.import');
+
+Route::resources([
+    'distance' => \App\Http\Controllers\DistanceController::class,
+]);
